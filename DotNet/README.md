@@ -8,7 +8,7 @@ Exemplo em C#:
 Identity_Authenticator.Identity_Authenticator identity = new Identity_Authenticator.Identity_Authenticator();
             try
             {
-                var token = identity.GetToken("https://identityhomolog.acesso.io/", @"`**Repositório onde se encontra a chave privada**`", "sdk_auth", "<TENANT_ID>");
+                var token = identity.GetToken("https://identityhomolog.acesso.io/", @"`**Repositório onde se encontra a chave privada**`", "<ACCOUNT_NAME>", "<TENANT_ID>");
                 Console.Write(token);
             }
             catch (Exception Ex)
